@@ -8,15 +8,6 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.test.context.jdbc.Sql;
 
-@Sql(
-  //language=sql
-  statements = """
-        CREATE TABLE IF NOT EXISTS users (
-            id BIGINT PRIMARY KEY,
-            name VARCHAR
-        );
-      """,
-  executionPhase = Sql.ExecutionPhase.BEFORE_TEST_METHOD)
 public class UserRepositoryTest extends AbstractIntegrationTest {
 
     @Autowired
