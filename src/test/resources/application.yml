@@ -4,3 +4,4 @@ spring:
     properties:
       hibernate:
         format_sql: true
+#        allow_update_outside_transaction: true
